@@ -55,7 +55,8 @@ This project relies on the following libraries. Please ensure to install them be
 sudo apt update && sudo apt install -y \
   libopenmpi-dev \    # MPI + OpenMPI
   libtbb-dev \        # TBB
-  libfmt-dev          # fmt
+  libfmt-dev \        # fmt
+  libmrmpi-dev        # mapreduceMPI
 ```
 
 - **lz4**   -Compression algorithm  [lz4 download](https://github.com/powturbo/TurboPFor-Integer-Compression)
