@@ -1,0 +1,11 @@
+{
+    "dataset": "random-xs",
+    "nb": 10000,
+    "nq": 1000,
+    "d": 20,
+    "dtype": "float32",
+    "ds_fn": "data_10000_20",
+    "qs_fn": "queries_1000_20",
+    "gt_fn": "gt_10000_1000_20",
+    "basedir": "data/random10000"
+}

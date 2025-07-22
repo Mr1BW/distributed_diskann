@@ -1,0 +1,15 @@
+-std=c++17
+-I/usr/lib/llvm-14/include/c++/v1
+-I/usr/lib/x86_64-linux-gnu/openmpi/include
+-I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-Iinclude/
+-Iinclude/parlay
+-Llib/
+-DPARLAY_OPENMP
+-fopenmp
+-lMapReduceMPI
+-lfmt
+-ltbb
+-L/usr/lib/x86_64-linux-gnu/openmpi/lib
+-lmpi_cxx
+-lmpi

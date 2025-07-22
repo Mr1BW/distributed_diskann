@@ -1,0 +1,11 @@
+{
+    "dataset": "bigann-10M",
+    "nb": 10000000,
+    "nq": 10000,
+    "d": 128,
+    "dtype": "uint8",
+    "ds_fn": "base.1B.u8bin.crop_nb_10000000",
+    "qs_fn": "query.public.10K.u8bin",
+    "gt_fn": "bigann-10M",
+    "basedir": "data/bigann-10M"
+}

@@ -1,0 +1,11 @@
+{
+    "dataset": "text2image-10M",
+    "nb": 10000000,
+    "nq": 100000,
+    "d": 200,
+    "dtype": "float32",
+    "ds_fn": "base.1B.fbin.crop_nb_10000000",
+    "qs_fn": "query.public.100K.fbin",
+    "gt_fn": "text2image-10M",
+    "basedir": "data/text2image1B"
+}

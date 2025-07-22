@@ -1,0 +1,15 @@
+{
+    "build": true,
+    "save": true,
+    "query": false,
+    "two_pass":false,
+    "data_para":"./random-s.json",
+    "start_point_index":0,
+    "xita":1,
+    "alpha":1.2,
+    "L":64,
+    "R":32,
+    "Ls":100,
+    "num_neighbors_query":10,
+    "max":0
+}
