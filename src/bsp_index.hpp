@@ -285,7 +285,7 @@ public:
             comm_time.start();
             //4字节 点的数量 + 所有邻居的数组大小 + 邻居节点序列 + 自身点索引（相对）
             outbox_len = sizeof(unsigned int) + new_out_.size()*sizeof(unsigned int) + all_size*sizeof(indexType) + new_node_id.size()*sizeof(indexType);
-            assert(outbox_len < 4LL*1024*1024*1024);
+            assert(outbox_len < (uint64_t)INT_MAX);
             //outbox_buf.resize(sizeof(unsigned int) + new_out_.size()*sizeof(unsigned int) + all_size*sizeof(indexType) + new_node_id.size()*sizeof(indexType));
             //status.messages.resize(total_rank * new_out_.size());
             unsigned int node_count = static_cast<unsigned int>(new_out_.size());
@@ -415,7 +415,7 @@ public:
 
             //4字节 点的数量 + 所有邻居的数组大小 + 邻居节点序列 + 自身点索引（相对）
             outbox_len = sizeof(unsigned int) + grouped_by.size()*sizeof(unsigned int) + grouped_by.size()*sizeof(indexType) + all_size*sizeof(indexType);
-            assert(outbox_len < 4LL*1024*1024*1024);
+            assert(outbox_len < (uint64_t)INT_MAX);
             //outbox_buf.resize(sizeof(unsigned int) + grouped_by.size()*sizeof(unsigned int) + grouped_by.size()*sizeof(indexType) + all_size*sizeof(indexType));
             //status.messages.resize(total_rank * new_out_.size());
             unsigned int grouped_by_count = static_cast<unsigned int>(grouped_by.size());
@@ -555,4 +555,3 @@ void bsp_build(BuildParams &BP, Graph<unsigned int>& G, PointRange& Points,stats
     BSP::BroadcastBSPWorker worker(p);
     worker.run();
 }};
-

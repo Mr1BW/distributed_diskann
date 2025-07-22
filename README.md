@@ -1,5 +1,13 @@
 # distributed_diskann
 
+## Project Origin
+
+This project is based on [parlayANN](https://github.com/cmuparlay/ParlayANN), licensed under the MIT License
+
+Reference: [ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate Nearest Neighbor Search Algorithms](https://doi.org/10.1145/3627535.3638475)
+
+
+
 ## Dataset Preparation
 
 Small dataset
@@ -31,14 +39,32 @@ Download the bigann and text2image datasets
 
 There is a configuration file for the corresponding dataset in the project
 
+
+
+## Dependencies
+
+This project relies on the following libraries. Please ensure to install them before building:
+
+- **MPI** (>=4.1.2)  -Parallel computing
+- **OpenMPI**   -High-performance MPI implementation
+- **tbb**   -Parallel programming
+- **fmt**   -Modern C++ formatting library
+- **mapreduceMPI**   -MapReduce framework for MPI
+
+```
+sudo apt update && sudo apt install -y \
+  libopenmpi-dev \    # MPI + OpenMPI
+  libtbb-dev \        # TBB
+  libfmt-dev          # fmt
+```
+
+- **lz4**   -Compression algorithm  [lz4 download](https://github.com/powturbo/TurboPFor-Integer-Compression)
+
+- **TurboPFor**  -Integer Compression  [TurboPFor download](https://github.com/powturbo/TurboPFor-Integer-Compression)
+
 ## Compilation
 
-This project uses **GCC** and **MPI** for compilation
-
-```
-sudo apt update
-sudo apt install -y g++ libopenmpi-dev
-```
+This project uses **Makefile**  for compilation
 
 Compile the original non-distributed version of parlayann
 
@@ -64,13 +90,17 @@ Non-distributed version running
 
 It will read the running parameters and the required dataset from `para.json`
 
+-------
+
 Distributed version operation
 
 ```
-mpirun -np 2 --bind-to core --map-by slot:pe=3 ./build/distributed_diskann
+mpirun -np X ./build/distributed_diskann
 ```
 
-Two processes will be initiated, with each process utilizing a maximum of three CPU cores.
+X processes will be initiated to run the program
+
+parameters from `para.json`
 
 ## Parameters
 
