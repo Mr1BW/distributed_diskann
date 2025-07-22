@@ -82,16 +82,6 @@ The compiled files will be stored in the `build/` directory
 
 ## Operation
 
-Non-distributed version running
-
-```
-./build/parlayann
-```
-
-It will read the running parameters and the required dataset from `para.json`
-
--------
-
 Distributed version operation
 
 ```
