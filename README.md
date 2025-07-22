@@ -33,7 +33,12 @@ There is a configuration file for the corresponding dataset in the project
 
 ## Compilation
 
-Utilize MakeFile to facilitate automatic compilation
+This project uses **GCC** and **MPI** for compilation
+
+```
+sudo apt update
+sudo apt install -y g++ libopenmpi-dev
+```
 
 Compile the original non-distributed version of parlayann
 
@@ -97,4 +102,11 @@ In the dataset configuration JSON
 
 - **gt_fn** : ground truth filename
 
-  
+
+
+## Acknowledgements
+
+- [ParlayANN](https://github.com/magdalendobson/ParlayANN-ppopp24/tree/ppopp-artifact-final-2?tab=readme-ov-file) - MIT License
+
+- [TurboPFor-Integer-Compression: Fastest Integer Compression](https://github.com/powturbo/TurboPFor-Integer-Compression) - GPL-2.0 license
+- [lz4: Extremely Fast Compression algorithm](https://github.com/lz4/lz4) -  BSD 2-Clause license
