@@ -65,7 +65,7 @@ sudo apt update && sudo apt install -y \
 
 ## Compilation
 
-This project uses **Makefile**  for compilation
+This project uses **Makefile**  for compilation. We test the compilation and the program under Ubuntu 22.04 LTS.
 
 Compile the original non-distributed version of parlayann
 
