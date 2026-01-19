@@ -1,6 +1,6 @@
 # distributed_diskann
 
-Paper： [Distributed Graph-Based Approximate Nearest(ISPA2025)](Distributed Graph-Based Approximate Nearest.pdf) 
+Paper： [Distributed Graph-Based Approximate Nearest](Distributed Graph-Based Approximate Nearest.pdf) (ISPA2025)
 
 ## Project Origin
 
