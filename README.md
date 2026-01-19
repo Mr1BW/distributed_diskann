@@ -1,5 +1,7 @@
 # distributed_diskann
 
+Paper： [Distributed Graph-Based Approximate Nearest(ISPA2025)](Distributed Graph-Based Approximate Nearest.pdf) 
+
 ## Project Origin
 
 This project is based on [parlayANN](https://github.com/cmuparlay/ParlayANN), licensed under the MIT License
