@@ -1,6 +1,6 @@
 # distributed_diskann
 
-Paper： [Distributed Graph-Based Approximate Nearest](Distributed Graph-Based Approximate Nearest.pdf) (ISPA2025)
+Paper： [Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism](./ISPA2025.pdf) 
 
 ## Project Origin
 
@@ -9,7 +9,7 @@ This project is based on [parlayANN](https://github.com/cmuparlay/ParlayANN), li
 Reference: [ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate Nearest Neighbor Search Algorithms](https://doi.org/10.1145/3627535.3638475)
 
 
-
+ISPA2025
 ## Dataset Preparation
 
 Small dataset
