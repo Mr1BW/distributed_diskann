@@ -1,6 +1,25 @@
 # distributed_diskann
 
-Paper： [Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism](./ISPA2025.pdf) 
+Paper： [Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/document/11245360)
+
+```latex
+@INPROCEEDINGS{11245360,
+  author    =  {Wang, Bingwen and Fu, Xinyi and Wang, Zhaokang},
+  booktitle =  {2025 IEEE International Symposium on 
+               Parallel and Distributed Processing with Applications (ISPA)}, 
+  title     =  {Distributed Graph-Based Approximate Nearest Neighbor 
+               Search Index Construction via Task Parallelism}, 
+  year      =  {2025},
+  volume    =  {},
+  number    =  {},
+  pages     =  {484-491},
+  keywords  =  {Distributed processing;Scalability;Organizations;Parallel  
+                processing;Nearest neighbor methods;Broadcasting;Approximation 
+                algorithms;Throughput;Indexes;approximate nearest neighbor 
+                search;proximity graph;task parallelism;distributed processing},
+  doi       =  {10.1109/ISPA67752.2025.00070}
+}
+```
 
 ## Project Origin
 
